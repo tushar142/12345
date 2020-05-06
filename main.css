@@ -16,23 +16,25 @@ body{
 
 .header1{
 	background: #2B2C2C;
-	padding: 0.4rem 0;
+	padding: 0.5rem 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
+	transition: all .3s ease-in-out;
 }
 
 .active{
 	background: #252525;
+	padding: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000000;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
-	transition: all .3s ease;
+	transition: all .3s ease-in-out;
 }
 
 .nav-wraper{
@@ -47,7 +49,7 @@ body{
 .mobile-nav{
 	position: absolute;
 	top: 3.1rem;
-	left: 50%;
+	left: 40%;
 	background: #252525;
   	width: 65%;
   	min-height: 30%;	
@@ -166,17 +168,13 @@ body{
 	padding: 20px
 }
 
-@media screen and(min-width: 320) {
-
-	
-}
 
 /*==================NavBar Ends========================*/
 
 /*==================Banner Starts========================*/
 
 .bnr-section{
-	padding: 8.2rem 0 0 0;
+	padding: 7rem 0 0 0;
 }
 .banner-container{
 	background: #2B2C2C;
@@ -236,7 +234,7 @@ body{
 }
 
 .bnr-img{
-	width: 75%;
+	width: 100%;
 	height: auto;
 	padding: 0 0.8px;
 }
@@ -251,7 +249,7 @@ body{
 /*========================About Me Starts====================*/
 
 .about-wrap{
-	padding: 1.9rem 0 0px 0;
+	padding: 0 0 0px 0;
 	background: #303131;
 	position: relative;	
 	display: flex;
@@ -401,7 +399,7 @@ body{
 .searve-box{
 	display: flex;
 	flex-direction: column;
- 	padding: 60px 60px;
+ 	padding: 60px 40px;
  	border-radius: 8px;
 }
 
@@ -428,6 +426,11 @@ body{
 	color: #ffff;
 }
 
+.searve-box h4,
+.searve-box p{
+	margin: .9rem 0;
+}
+
 .fa, .fas{
 	font-size: 30px;
 }
@@ -440,11 +443,13 @@ body{
 
 .clr{
 	background: pink;
-
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .lw-container{
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 1.5rem;
 	grid-template-columns: repeat(1, 1fr); 
 	grid-template-rows: 200px;	
 	grid-auto-rows: 200px;
@@ -472,6 +477,7 @@ body{
 }
 
 .ex-info{
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	border: 0.01rem solid #ccc;
@@ -652,4 +658,30 @@ body{
 .submitbtndiv button:hover{
 	background-color: transparent;
 	color: #fff;
+}
+
+footer{
+	background-color:#252525;
+	text-align: right;
+	color: white;
+}
+footer p{
+	padding: 5px;
+}
+
+@media screen and (min-width: 768px){
+	
+	.header1{
+		padding: 2rem 0;
+	}
+
+	.active{
+		padding: 1rem;
+	}
+	.hmb-container{
+	display: none;
+	}
+	.nav-list-container{
+		display: block;
+	}
 }
