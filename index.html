@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/4536c36d76.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header" class="header1 active">
+    <header id="header" class="header1">
       <nav class="main-nav">
         <div class="nav-wraper">
           <div class="logo-container">
@@ -62,6 +62,10 @@
     <section class="about-wrap" id="about-sec">
       <div class="container">
         <div class="about-bg-img">
+          <pre>
+
+            
+          </pre>
             <div class="about-text">
               <h2>About Me</h2>
             </div>
@@ -236,6 +240,9 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>2020 All right reserved</p>
+    </footer>
 <script>
   const headerscrl = document.querySelector('.header1');
   let burger = document.querySelector('.hmb-container')
@@ -244,7 +251,7 @@
   window.onscroll = function() {
     var top = window.scrollY;
 
-    if (top >= 100) {
+    if (top >= 27) {
       headerscrl.classList.add('active')
     }else {
       headerscrl.classList.remove('active')
