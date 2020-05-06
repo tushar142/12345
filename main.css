@@ -1,0 +1,655 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family:'Roboto', sans-serif;
+}
+
+/*==================NavBar starts========================*/
+
+.header1{
+	background: #2B2C2C;
+	padding: 0.4rem 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.active{
+	background: #252525;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000000;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+	transition: all .3s ease;
+}
+
+.nav-wraper{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	padding: 0 0.7rem;
+}
+
+.mobile-nav{
+	position: absolute;
+	top: 3.1rem;
+	left: 50%;
+	background: #252525;
+  	width: 65%;
+  	min-height: 30%;	
+  	transform: translateX(130%);
+  	transition: all .2s ease ;
+}
+
+.active-mobnav{
+	transform: translateX(0);
+	transition: all .2s ease;
+}
+
+.mob-ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+.mob-ul li{
+	width: 100%;
+	background: #252525;
+}
+
+.mob-ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem;
+	display: block;
+	text-align: center;
+	outline: none;
+}
+.mob-ul li a:hover{
+	background: #2B2C2C;
+}
+
+.hmb-container{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+.lines{
+	width: 1.9rem;
+	height: 5px;
+	background: #fff;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.lines:before,
+.lines:after{
+	content: '';
+	position: absolute;
+	width: 1.9rem;
+	height: 5px;
+	background: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: all .4s ease-in-out;
+}
+
+.lines:before{
+	transform: translateY(-10px);
+}
+
+.lines:after{
+	transform: translateY(10px);
+}
+
+.opens .lines{
+		background: transparent;
+	}
+	
+.opens .lines::before{
+		transform: rotate(45deg);
+	}
+.opens .lines::after{
+		transform: rotate(-45deg);
+	}
+
+.logo-container{
+	margin-right: auto;
+	font-size: 1.2rem;
+}
+.logo-container h1{
+	color: #FBD214;
+	font-weight: 400;
+}
+.logo-container a{
+	text-decoration: none;
+	outline: none;
+}
+
+.nav-list-container{
+	position: static;
+	display: none;
+}
+
+.ul-list{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	font-size: 1.2rem;
+}
+.ul-list li{
+	margin-left: 10px;
+}
+.ul-list li a{
+	color: white;
+	text-decoration: none;
+	padding: 20px
+}
+
+@media screen and(min-width: 320) {
+
+	
+}
+
+/*==================NavBar Ends========================*/
+
+/*==================Banner Starts========================*/
+
+.bnr-section{
+	padding: 8.2rem 0 0 0;
+}
+.banner-container{
+	background: #2B2C2C;
+}
+
+.bnr-info-sec{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bnr-text{
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.bnr-text h2{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0 0 1.2rem 0;
+}
+
+.bnr-text h4{
+	font-size: 1.1rem;
+	color: #cccccc;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.hireme{
+	margin: 1.5rem 0 3rem 0;
+	display: inline-block;
+	-webkit-box-shadow: 10px 6px 40px 5px rgba(176, 118, 14, 0.2);
+    box-shadow: 10px 6px 40px 5px rgba(176, 118, 14, 0.2);
+}
+.hireme a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: 2px solid #feb633;
+	border-radius: 5px;
+	background: #feb633;
+	letter-spacing: 2px;
+	padding: 10px 23px;
+	transition: all .3s ease;
+}
+.bnr-text a:hover,
+.hireme:hover{
+	background: transparent;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+.bnr-img{
+	width: 75%;
+	height: auto;
+	padding: 0 0.8px;
+}
+
+.bnr-img img{
+	width: 100%;
+	height: auto;
+}
+
+/*========================benner end==============*/
+
+/*========================About Me Starts====================*/
+
+.about-wrap{
+	padding: 1.9rem 0 0px 0;
+	background: #303131;
+	position: relative;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.about-bg-img{
+	background-image: url(about-bg.png);
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	background-position: center center;
+	width: 100%;
+	height: 12rem;
+}
+.about-text{
+	text-align: center;
+	margin: 3.5rem 0 0 0;
+}
+
+.about-text h2{
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #cccccc;
+	position: relative;
+}
+.about-text h2:before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	border-radius: 3px;
+	width: 3.5rem;
+	height: 4px;
+	background: #feb633;
+}
+.about-info{
+	padding: 20px 12px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-info p{
+	color: #cccccc;
+}
+
+.about-btn{
+	margin: 2rem 0 20px 0;
+	text-align: center;
+}
+.about-btn a{
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #feb633;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+.about-btn .a1{
+	margin-right: 1.2rem;
+	background: #feb633;
+	transition: all .3s ease;
+}
+
+.about-btn .a1:hover{
+	background: transparent;
+	color: #feb633;
+}
+
+.about-btn .a2{
+	background: transparent;
+	transition: all .3s ease;
+	color: #feb633;
+}
+
+.about-btn .a2:hover{
+	background: #feb633;
+	color: #ffff;
+}
+
+/*========================About Me end====================*/
+
+/*======================== Service Section starts====================*/
+
+.service-section{
+	padding: 50px 12px 20px 12px;
+	background: #2B2C2C;
+}
+
+.main-container-div{
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+.service-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 3rem 0;
+}
+
+.service-text h2{
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #cccccc;
+	position: relative;
+	margin: 0 0 1.5rem 0;
+}
+
+.service-text h2:before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	border-radius: 3px;
+	width: 3.5rem;
+	height: 4px;
+	background: #feb633;
+}
+
+.service-text p{
+	text-align: center;
+	color: #cccccc;
+}
+
+.service-card-wraper{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem;
+}
+
+.img-container{
+	background-image: url(code.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+}
+.searve-box{
+	display: flex;
+	flex-direction: column;
+ 	padding: 60px 60px;
+ 	border-radius: 8px;
+}
+
+.box1{
+	background-image: -webkit-linear-gradient(-48deg,rgba(36,226,254,0.6)0%,rgba(36,176,254,0.7)54%,rgba(35,126,253, 0.8)100%);
+
+}
+
+.box2{
+	background-image:-webkit-linear-gradient(-48deg,rgba(255,211,36,0.6)0%,rgba(254,187,36,0.7)54%,rgba(253,163,35,0.8)100%);
+}
+
+.box3{
+	background-image:-webkit-linear-gradient(-48deg,rgba(248,47,160,0.6)0%,rgba(214,54,208,0.7)54%,rgba(180,61,255,0.8)100%);
+}
+
+.box4{
+	background-image: -webkit-linear-gradient(-48deg,rgba(0,188,128,0.6)0%,rgba(2,204,71,0.7)54%,rgba(3,220,13,0.8)100%);
+}
+
+.searve-box i,
+.searve-box h4,
+.searve-box p{
+	color: #ffff;
+}
+
+.fa, .fas{
+	font-size: 30px;
+}
+
+/*======================== Work Section starts====================*/
+
+.latestwork{
+	 background: #303131;
+}
+
+.clr{
+	background: pink;
+
+}
+.lw-container{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(1, 1fr); 
+	grid-template-rows: 200px;	
+	grid-auto-rows: 200px;
+}
+/*
+.lw-1{
+	grid-column: 1 / 3; 
+	grid-row: 1 / 3;
+}
+
+.lw-8{
+	grid-column: 3 / -1; 
+}
+*/
+
+/*======================== Work Experiece Section starts====================*/
+
+.workex{
+	 background: #2B2C2C;
+}
+
+.ex-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.ex-info{
+	display: flex;
+	flex-direction: column;
+	border: 0.01rem solid #ccc;
+	padding: 35px 20px;
+	transition: all .3s ease;
+	background: #333333;
+}
+
+.ex-info:hover{
+	background: #fec110;
+}
+
+.ex-info p{
+	color: #cccccc
+}
+.ex-info p:nth-child(1){
+	margin-bottom: 1rem;
+}
+
+.ex-info h4{
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+.ex-info a{
+	text-decoration: none;
+	color: #ccc;
+	margin-bottom: 1.3rem;
+}
+
+
+/*======================== Hire Me====================*/
+
+
+.hiremesec{
+	 background: #303131;
+}
+
+.hirebtn{
+	padding: .5rem 2rem;
+	background-color: #ccc;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 1em;
+	transition: all 0.3s ease;
+}
+
+.hirebtn:hover{
+	background: #fec110;
+	color: #fff;
+}
+
+
+/*======================== Hire Me====================*/
+
+.contact-info-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+
+.form-container{
+	width: 100%;
+}
+
+.contact-info h4,
+.contact-info address,
+.contact-info p,
+.contact-info a
+{
+	color: #ccc;
+	margin: 5px 0 30px 0;
+	font-size: 16px;
+}
+
+.form-wraper{
+	width: 100%;
+}
+
+.namediv{
+	display: block;
+	width: 100%;
+}
+.namediv label{
+	display: block;
+	color: #ccc;
+	margin: 0 0 16px 0;
+}
+.namediv input{
+	display: block;
+	width: 100%;
+	padding:1.2rem;	
+	border: none;
+	color: #fff;
+	outline: none;
+	background: #363737;
+}
+
+.numdiv{
+	display: block;
+	/*width: 50%;
+	float: left;
+*/
+}
+.numdiv label{
+	display: block;
+	color: #ccc;
+	margin: 20px 0 20px 0;
+}
+.numdiv input{
+	display: inline-block;
+	width: 100%;
+	padding:1.2rem;	
+	border: none;
+	color: #fff;
+	outline: none;
+	background: #363737;
+}
+
+.emaildiv{
+	display: block;
+	/*width: 50%;
+	float: right;*/
+}
+.emaildiv label{
+	display: block;
+	color: #ccc;
+	margin: 20px 0 20px 0;
+}
+.emaildiv input{
+	display: inline-block;
+	width: 100%;
+	padding:1.2rem;	
+	border: none;
+	color: #fff;
+	outline: none;
+	background: #363737;
+}
+
+.msgdiv{
+	display: block;
+	width: 100%;
+	float: right;
+}
+.msgdiv label{
+	display: block;
+	color: #ccc;
+	margin: 20px 0 20px 0;
+}
+.msgdiv textarea{
+	display: block;
+	width: 100%;
+	padding:1.2rem;	
+	border: none;
+	color: #fff;
+	outline: none;
+	min-height: 10rem;
+	background: #363737;
+}
+
+.submitbtndiv{
+	display: inline-block;
+	margin-top: 1.3rem;
+}
+.submitbtndiv button{
+	padding: 13px 2.3rem;
+	border-radius: 8px;
+	border: 1px solid #fec110;
+	outline: none;
+	background-color: #fec110;
+	transition: all .3s ease;
+}
+.submitbtndiv button:hover{
+	background-color: transparent;
+	color: #fff;
+}
