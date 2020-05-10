@@ -562,8 +562,7 @@ body{
 }
 
 .form-wraper{
-	width: 70%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .namediv{
@@ -775,5 +774,9 @@ footer p{
 	.emaildiv{
 		width: 50%;
 		float: right;
+	}
+	.form-wraper{
+		width: 70%;
+		margin: 0 auto;
 	}
 }
