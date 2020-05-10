@@ -46,7 +46,7 @@
             <div class="bnr-info-sec">
               <div class="bnr-text">
                 <h2>I'm Tushal</h2>
-                <h4>Freelance Web Designer</h4>
+                <h4>I give your idea a meaningful shape</h4>
                 <div class="hireme">
                   <a href="#">Hire Me</a>
                 </div>
@@ -84,6 +84,10 @@
           </div>
         </div>
       </div>
+       <pre>
+
+            
+          </pre>
     </section>
 
     <section class="service-section" id="services">
@@ -145,7 +149,6 @@
           <div class="lw-5 clr">box no 5</div>
           <div class="lw-6 clr">box no 6</div>
           <div class="lw-7 clr">box no 7</div>
-          <div class="lw-8 clr">box no 8</div>
         </div>
       </div>
     </section>
@@ -201,7 +204,7 @@
             <h2>Contact Me</h2>
           </div>
         </div>
-        <div>
+        <div class="form-info-container">
           <div class="contact-info-container">
             <div class="contact-info">
               <h4>Contact Info</h4>
@@ -256,12 +259,16 @@
     }else {
       headerscrl.classList.remove('active')
     }
-  }
+  };
 
   burger.addEventListener('click', function(){
-    mobnav.classList.toggle('active-mobnav')
+    mobnav.classList.toggle('showlinks')
+    headerscrl.classList.toggle('active')
+    headerscrl.classList.toggle('active1')
     burger.classList.toggle('opens')
   })
+
+
 
 </script>
 </body>
