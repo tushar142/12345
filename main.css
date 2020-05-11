@@ -8,8 +8,59 @@ html{
 	scroll-behavior: smooth;
 }
 
-body{
-	font-family:'Roboto', sans-serif;
+body { 
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    font-family:'Roboto', sans-serif;
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+.about_anim{
+	opacity: 0;
+}
+
+.about_anim.animate__animated{
+	opacity: 1;
+}
+
+.anim{
+	opacity: 0;
+}
+
+.anim.animate__animated{
+	opacity: 1;
+}
+.port{
+	opacity: 0;
+}
+
+.port.animate__animated{
+	opacity: 1;
+}
+
+.ex_left{
+	opacity: 0;
+}
+
+.ex_left.animate__animated{
+	opacity: 1;
+}
+
+.fanim{
+	opacity: 0;
+}
+
+.fanim.animate__animated{
+	opacity: 1;
 }
 
 
@@ -187,7 +238,7 @@ body{
 /*==================Banner Starts========================*/
 
 .bnr-section{
-	padding:1.5rem 0 0 0;
+	padding:3.5rem 0 0 0;
 	height: 100vh;
 }
 .banner-container{
@@ -770,13 +821,12 @@ footer p{
 		float: left;
 		margin-right: 1rem;
 	}
-	
 	.emaildiv{
 		width: 50%;
 		float: right;
 	}
+
 	.form-wraper{
 		width: 70%;
-		margin: 0 auto;
-	}
+	}	
 }
