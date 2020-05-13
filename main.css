@@ -543,8 +543,14 @@ body {
 	background: #fec110;
 }
 
+.ex-info:hover p,
+.ex-info:hover h4,
+.ex-info a{
+	color: #000;
+}
+
 .ex-info p{
-	color: #cccccc
+	color: #fff;
 }
 .ex-info p:nth-child(1){
 	margin-bottom: 1rem;
