@@ -571,7 +571,7 @@ body {
 }
 
 .hirebtn{
-	padding: .5rem 2rem;
+	padding: .5rem 1rem;
 	background-color: #ccc;
 	border-radius: 8px;
 	text-decoration: none;
@@ -587,7 +587,7 @@ body {
 }
 
 
-/*======================== Hire Me====================*/
+/*======================== Hire Me end====================*/
 
 .contact-info-container{
 	display: flex;
