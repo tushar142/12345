@@ -733,6 +733,18 @@ footer p{
 	padding: 5px;
 }
 
+.social_media_icons,
+.social_media_icons p{
+	margin: 1rem 0;
+	color: #fff;
+}
+
+.social_media_icons i{
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 0 .5rem;
+}
+
 @media screen and (min-width: 768px){
 
 	.main-container{
